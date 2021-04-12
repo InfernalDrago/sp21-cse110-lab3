@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang=”en”>
+    <head>
+        <meta charset="utf-8">
+        <title>Ricardo's HTML Journal</title> 
+        <link rel="shortcut icon" type="image/jpg" href="Gilgamesh4.jpg"/>
+    </head>
+    <body>
+        <header class="page-header">
+            <h1>Ricardo Guerrero's Journal</h1>
+            <div class="image">
+                <img src="Gilgamesh4.jpg"
+                    alt="Fate/Stay Night Gil">
+            </div>
+            <details>
+                <summary>Gilgamesh</summary>
+                My favorite character from the anime franchise Fate. Based on King Gilgamesh from Uruk.
+            </details>
+            <figure>
+                <figcaption>Gilgamesh's Theme:</figcaption>
+                <audio
+                    controls
+                    src="FateStay Night OST's - Eiyuu Ou(Gilgamesh's Theme).mp3">
+                </audio>
+            </figure>
+        </header>
+
+        <main role="main">
+            <h2>Journal Entries</h2>
+            <section>
+                <h3>April 9th, 2021</h2>
+                <p>
+                    On <b class="date">Friday April 9th</b>, I met up with my CSE110 group for an Intro Meeting at <span class="time">5:00 pm</span>.
+                     We all introduced ourselves, decided our team name and logo, and played skribbl.io for about an hour. 
+                     At about <span class="time">6:00 pm</span>, I met up with the team responsible for organizing this years DataHacks event. We discussed 
+                     how the event would start off and any last minute news. At <span class="time">10:30 pm</span>, my partner for the event and I presented 
+                     our dataset track to the participants and ended our night there.
+                </p>
+            </section>
+
+            <hr>
+
+            <section>
+                <h3>April 10th, 2021</h2>
+                <p>
+                    On <b class="date">Saturday April 10th</b>, I had signed up for two 2 hour sessions when I would have to stay on a voice channel
+                 for DataHacks in case any participants had questions concerning the datasets. There weren't many participants in those 4 hours 
+                 so I passed the time playing video games while waiting for the next person to join the voice channel. With the few participants I 
+                 interacted with, some of them had questions I didn't understand so I was <em>really</em> stressed with those until another 
+                 mentor joined in. In between the two sessions I hosted a workshop on writing the final reports that would be turned in to the judges. I presented twice in my time slot because 
+                 some people arrived late to the session. After my last mentor session ended at <span class="time">9:00 pm</span>, I watched 28 Days Later with my family and 
+                 went to bed.
+                 <br>
+                 <video controls width="300">
+                    <source src= "Workshop.mp4"
+                            type="video/mp4">
+                </video>
+                <details>
+                    <summary>Recording of my Report Writing Workshop</summary>
+                    I cringe at the sound of my own voice over a recording.
+                </details>
+                </p>
+            </section>
+
+            <hr>
+
+            <section>
+                <h3>April 11th, 2021</h2>
+                <p>
+                    On <b class="date">Sunday April 11th</b>, my family and I went out to eat brunch at a restaurant called <i class="restaurant">Cafe Sevilla</i>. We ordered a <strong>9 course</strong> appetizer that included:
+                    <br> 
+                    <ul>
+                        <li>Eggs Benedict</li>
+                        <li>Potato Tart</li>
+                        <li>Ceviche</li>
+                        <li>Filled Dates</li>
+                        <li>Cheese Empanada</li>
+                        <li>Meatballs</li>
+                        <li>Salmon</li>
+                        <li>Short Ribs</li>
+                        <li>Lemon Tart</li>
+                    </ul>
+                    After the appetizers we ordered two <strong>3 course</strong> meals that included:
+                    <br>
+                    <ol>
+                        <li>Bread with Tomato Paste and Serrano Ham</li>
+                        <li>Pork Belly Paella</li>
+                        <li>Churros with Chocolate</li>
+                    </ol>
+                    It was all really good and we left satisfied.
+                </p>
+            </section>
+
+            <hr>
+
+            <button class="JEntry"
+                type="button">
+            New Entry
+            </button>
+
+            <hr>
+
+            <label for="Journal-Entry">Choose a Journal Format:</label>
+            <input list="styles" id="Mystyles" name="Mystyles" />
+
+            <datalist id="styles">
+                <option value="Date Entry">
+                <option value="To-Do List">
+                <option value="Audio Entry">
+                <option value="Video Entry">
+            </datalist>
+
+            <hr>
+
+            <form>
+                <fieldset>
+                  <legend>Choose your Entry Style</legend>
+              
+                  <input type="radio" id="aud" name="jstyle">
+                  <label for="aud">Audio</label><br/>
+              
+                  <input type="radio" id="vid" name="jstyle">
+                  <label for="vid">Video</label><br/>
+              
+                  <input type="radio" id="text" name="jstyle">
+                  <label for="text">Text</label>
+                </fieldset>
+            </form>
+
+            <hr>
+
+            <label for="newEnt">Insert new entry:</label>
+
+            <textarea id="newEnt" name="newEnt"
+                rows="7" cols="35">
+            </textarea>
+
+            <hr>
+            
+            <label for="entry-select">Choose an Entry Style:</label>
+
+            <select name="jstyle" id="entry-select">
+                <option value="">--Please choose an option--</option>
+                <option value="aud">Audio</option>
+                <option value="vid">Video</option>
+                <option value="text">Text</option>
+            </select>
+
+            <hr>
+
+            <form action="" method="get" class="form-entry">
+                <div class="form-entry">
+                  <label for="name">Enter your name: </label>
+                  <input type="text" name="name" id="name" required>
+                </div>
+                <div class="form-entry">
+                  <label for="date">Enter the date: </label>
+                  <input type="date" name="date" id="date" required>
+                </div>
+                <div class="form-entry">
+                  <input type="submit" value="Entry Submit!">
+                </div>
+                <div class="form-entry">
+                    <input type="checkbox" id="Notification" name="Notification"
+                           checked>
+                    <label for="Notification">Send Notification when Entry is submitted?</label>
+                  </div>
+            </form>
+
+            <hr>
+        </main>
+
+        <footer>
+            <a href="r1guerre@ucsd.edu">Email</a>
+        </footer>
+    </body>
+</html>
+
