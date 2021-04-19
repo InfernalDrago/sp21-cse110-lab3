@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang=”en”>
     <head>
+        <style>
+        h1 {
+            font-size: 3pc;
+            color: darkred;
+        }
+        </style>
         <link rel="stylesheet" href="style.css">
         <meta charset="utf-8">
         <title>Ricardo's HTML Journal</title> 
@@ -27,7 +33,7 @@
         </header>
 
         <main role="main">
-            <h2>Journal Entries</h2>
+            <h2><span lang="en-us">Journal Entries</h2>
             <section>
                 <h3>April 9th, 2021</h2>
                 <p>
@@ -44,6 +50,8 @@
             <section>
                 <h3>April 10th, 2021</h2>
                 <p>
+                <div class="box">
+                <p>
                     On <b class="date">Saturday April 10th</b>, I had signed up for two 2 hour sessions when I would have to stay on a voice channel
                  for DataHacks in case any participants had questions concerning the datasets. There weren't many participants in those 4 hours 
                  so I passed the time playing video games while waiting for the next person to join the voice channel. With the few participants I 
@@ -51,15 +59,20 @@
                  mentor joined in. In between the two sessions I hosted a workshop on writing the final reports that would be turned in to the judges. I presented twice in my time slot because 
                  some people arrived late to the session. After my last mentor session ended at <span class="time">9:00 pm</span>, I watched 28 Days Later with my family and 
                  went to bed.
+                </p>
+                <span>I was very tired that night.</span>
                  <br>
+                 <div class="float">
                  <video controls width="300">
                     <source src= "Workshop.mp4"
                             type="video/mp4">
                 </video>
+                </div>
                 <details>
                     <summary>Recording of my Report Writing Workshop</summary>
                     I cringe at the sound of my own voice over a recording.
                 </details>
+                </div>
                 </p>
             </section>
 
@@ -70,23 +83,25 @@
                 <p>
                     On <b class="date">Sunday April 11th</b>, my family and I went out to eat brunch at a restaurant called <i class="restaurant">Cafe Sevilla</i>. We ordered a <strong>9 course</strong> appetizer that included:
                     <br> 
-                    <ul>
-                        <li>Eggs Benedict</li>
-                        <li>Potato Tart</li>
-                        <li>Ceviche</li>
-                        <li>Filled Dates</li>
-                        <li>Cheese Empanada</li>
-                        <li>Meatballs</li>
-                        <li>Salmon</li>
-                        <li>Short Ribs</li>
-                        <li>Lemon Tart</li>
+                    <ul class="container">
+                        <li class="item-a">Eggs Benedict</li>
+                        <li class="item-b">Potato Tart</li>
+                        <li class="item-c">Ceviche</li>
+                        <li class="item-d">Filled Dates</li>
+                        <li class="item-e">Cheese Empanada</li>
+                        <li class="item-f">Meatballs</li>
+                        <li class="item-g">Salmon</li>
+                        <li class="item-h">Short Ribs</li>
+                        <li class="item-i">Lemon Tart</li>
                     </ul>
                     After the appetizers we ordered two <strong>3 course</strong> meals that included:
                     <br>
-                    <ol>
-                        <li>Bread with Tomato Paste and Serrano Ham</li>
-                        <li>Pork Belly Paella</li>
-                        <li>Churros with Chocolate</li>
+                    <ol class="flex-container">
+                        <ol>
+                        <li class="flex-item"> Bread with Tomato Paste and Serrano Ham</li>
+                        <li class="flex-item"> Pork Belly Paella</li>
+                        <li class="flex-item"> Churros with Chocolate</li>
+                        </ol>
                     </ol>
                     It was all really good and we left satisfied.
                 </p>
@@ -176,4 +191,6 @@
         </footer>
     </body>
 </html>
+
+
 
