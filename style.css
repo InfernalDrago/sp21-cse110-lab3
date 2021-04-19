@@ -1,10 +1,191 @@
-body {
-  background-color: #d4af37;
-  h1 {
-    color: red;
-    font-size: 15pt;
-  }
-  p {
-    font-size: 12px;
-  }
+* [lang^=en] {
+    font-family: 'Bangers', cursive;
 }
+
+body {
+    background-color: #d4af37;
+  }
+
+.box, p {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    margin-left: 2em;
+    text-align: left;
+}
+
+h2 {
+    font-size: 25pt;
+    color: darkred;
+    text-align: left;
+}
+
+h3 {
+    margin-left: 1.5em;
+    font-size: 20pt;
+    color: navy;
+    text-align: center;
+}
+
+.block,
+li {
+  border: 1px solid red;
+  padding: .5em;
+  
+}
+
+.box, button {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 1px;
+}
+
+div {
+    display: table-row;
+}
+
+label, input {
+    display: table-cell;
+    margin: 5px;
+}
+
+form {
+    padding: .5em;
+}
+
+.float {
+    float: left;
+    margin-top: 10px;
+    width: 200px;
+    height: 150px;
+    background-color: white;
+    border:1px solid black;
+    padding: 10px
+}
+
+video {
+    width: 300px;
+    height: 200px;
+}
+
+button:hover, button:active {
+    color: red;
+}
+
+.flex-container {
+    display: flex;
+
+    
+    justify-content: space-around;
+    
+    padding: 10;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .flex-item {
+    background: tomato;
+    padding: 5px;
+    width: 200px;
+    height: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 150px 150px 150px 100px 100px 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    grid-auto-flow: row;
+    justify-items: center;
+  }
+
+  .item-a {
+    grid-column: 1;
+    grid-row: 1;
+    place-self: center;
+  }
+
+  .item-b {
+    grid-column: 2;
+    grid-row: 1;
+    place-self: center;
+  }
+
+  .item-c {
+    grid-column: 3;
+    grid-row: 1;
+    place-self: center;
+  }
+
+  .item-d {
+    grid-column: 1;
+    grid-row: 2;
+    place-self: center;
+  }
+
+  .item-e {
+    grid-column: 2;
+    grid-row: 2;
+    place-self: center;
+  }
+
+  .item-f {
+    grid-column: 3;
+    grid-row: 2;
+    place-self: center;
+  }
+
+  .item-g {
+    grid-column: 1;
+    grid-row: 3;
+    place-self: center;
+  }
+
+  .item-h {
+    grid-column: 2;
+    grid-row: 3;
+    place-self: center;
+  }
+
+  .item-i {
+    grid-column: 3;
+    grid-row: 3;
+    place-self: center;
+  }
+
+  #Mystyles {
+      background-color: yellow;
+  }
+
+  a[href$=".edu"] {
+      color: red;
+  }
+
+  section > p {
+      background-color: yellow;
+  }
+
+  div > p {
+      background-color: yellow;
+  }
+
+  ol ol {
+    list-style-type: upper-roman;
+  }
+
+  li:first-of-type + li {
+    color: navy;
+  }
+
+  p ~ span {
+    color: red;
+  }
